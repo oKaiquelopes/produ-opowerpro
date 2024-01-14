@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgba(253, 253, 253, 1);
+    font-family: 'Montserrat';
+}
+header {
+    align-items: center;
+}
+.logo-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    margin-left: 3%;
+}
+.logo-header img{
+    height: 55px;
+    width: 100%;
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 70%;
+}
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.nav-item {
+    margin: 0 20px;
+}
+.nav-link {
+    color: #09142D;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+.dropbtn {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    background-color: #FDFDFD;
+    border-radius: 5px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FDFDFD;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    color: #09142D;
+    border-radius: 5px;
+}
+.dropdown-content a {
+    color: #09142D;
+    font-weight: 500;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.show {
+    display: block;
+}
+.mobile-menu-icon {
+    display: none;
+}
+.mobile-menu {
+    display: none;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(247, 252, 254, 1);
+}
+.textos-home{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    max-height: auto;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+.textos-home h1{
+    color: #09142D;
+    font-family: 'Space Grotesk';
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 108.333%; /* 3.25rem */
+}
+.textos-home p{
+    color: #09142D;
+    font-family: 'Space Grotesk';
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 3%;
+}
+.btn-home{
+    color: #FDFDFD;
+    font-family: 'Space Grotesk';
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    background: #3B5EED;
+    padding: 15px 20px;
+    border-radius: 5px;
+    width: 30%;
+    margin-top: 3%;
+}
+.btn-home:hover{
+    background: #2f4bbb;
+    transition: all 0.3s ease-out;
+}
+#indicado{
+    display: flex;
+    flex-direction: row;
+    max-height: auto;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(253, 253, 253, 1);
+}
+.textos-indicado{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    max-height: auto;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.textos-indicado h1{
+    color: #09142D;
+    font-family: 'Space Grotesk';
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 3%;
+}
+.desc-indicado{
+    color: #09142D;
+    font-family: 'Space Grotesk';
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 5%;
+}
+.imagem-indicado{
+    display: flex;
+    width: 50%;
+    max-height: auto;
+    align-items: center;
+    justify-content: center;
+    background-image: url(imagens/8497398_3937432.svg);
+    background-repeat: no-repeat;
+    margin-left: 3%;
+}
+#preco{
+    display: flex;
+    flex-direction: row;
+    max-height: auto;
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(214, 239, 251, 1);
+}
+.textos-preco{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    max-height: auto;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.tittle-preco{
+    color: #3B5EED;
+    font-family: 'Space Grotesk';
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.textos-preco h1{
+    color: #00033D;
+    font-family: 'Space Grotesk';
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 3%;
+}
+.desc-preco{
+    color: #09142D;
+    font-family: 'Space Grotesk';
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 3%;
+}
+.btn-preco{
+    color: #FDFDFD;
+    font-family: 'Space Grotesk';
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #407BFF;
+    padding: 15px 20px;
+    width: 40%;
+    margin-top: 5%;
+    border-radius: 5px;
+}
+.btn-preco:hover{
+    background: #3565ce;
+    transition: all 0.3s ease-out;
+}
+.imagem-preco{
+    display: flex;
+    width: 50%;
+    max-height: auto;
+    align-items: center;
+    justify-content: center;
+    background-image: url(imagens/35294599_8292847.svg);
+    background-repeat: no-repeat;
+    margin-left: 3%;
+}
+#teste{
+    display: flex;
+    flex-direction: row;
+    max-height: auto;
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(238, 225, 223, 1);
+}
+.textos-teste{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: flex-end;
+    width: 40%;
+    max-height: auto;
+    margin-left: 3%;
+    margin-top: 5%;
+    
+}
+.tittle-teste{
+    color: #3B5EED;
+    font-family: 'Space Grotesk';
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.textos-teste h1{
+    color: #140A77;
+    font-family: 'Space Grotesk';
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 3%;
+}
+.desc-teste{
+    color: #09142D;
+    font-family: 'Space Grotesk';
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 3%;
+}
+.imagem-teste{
+    display: flex;
+    width: 50%;
+    max-height: auto;
+    align-items: center;
+    justify-content: center;
+    background-image: url(imagens/12084746_20943890.svg);
+    background-repeat: no-repeat;
+    margin-left: 3%;
+    mix-blend-mode: multiply;
+}
+.btn-teste{
+    color: #FDFDFD;
+    font-family: 'Space Grotesk';
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #140A77;
+    padding: 15px 20px;
+    width: 40%;
+    margin-top: 5%;
+    border-radius: 5px;
+}
+.btn-teste:hover{
+    background: #0f0755;
+    transition: all 0.3s ease-out;
+}
+
+
+@media (max-width: 768px) {
+    .nav-bar {
+        padding: 1rem 1.5rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    #mudarEstilo{
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+        margin-left: 20%;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .icon{
+        height: 30px;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        align-items: center;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu #mudarEstilo{
+        display: block;
+        width: 50%;
+        margin-top: 2%;
+    }
+    .mobile-menu #mudarEstilo:hover{
+        scale: 1;
+    }
+    .open {
+        display: block;
+    }
+    .logo-header{
+        display: none;
+    }
+    .dropdown{
+        display: none;
+    }
+    #home,
+    #indicado,
+    #preco,
+    #teste{
+        align-items: center;
+        height: 40vh;
+    }
+    .textos-home,
+    .textos-indicado,
+    .textos-preco,
+    .textos-teste{
+        width: 100%;
+        margin: 0;
+    }
+    .textos-home h1,
+    .textos-indicado h1,
+    .textos-preco h1{
+        font-size: 1.5rem;
+        margin-left: 2%;
+    }
+    .textos-home p,
+    .textos-indicado p,
+    .textos-preco p{
+        font-size: 0.8rem;
+        margin-left: 2%;
+    }
+    .btn-home,
+    .btn-preco{
+        font-size: 0.9rem;
+        width: 50%;
+        margin-left: 2%;
+    }
+    .imagem-indicado{
+        display: none;
+    }
+    .imagem-preco{
+        display: none;
+    }
+    .tittle-preco{
+        font-size: 0.8rem;
+    }
+    .imagem-teste{
+        display: none;
+    }
+    .textos-teste{
+        width: 100%;
+        margin: 0;
+    }
+    .textos-teste h1{
+        font-size: 1.5rem;
+        margin-right: 2%;
+    }
+    .textos-teste p{
+        font-size: 0.8rem;
+        margin-right: 2%;
+    }
+    .btn-teste{
+        font-size: 0.9rem;
+        width: 50%;
+        margin-right: 2%;
+    }
+}
